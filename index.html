@@ -2,33 +2,83 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>My Blog</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Home | Insight Dev Blog</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <header>
-    <h1>My Awesome Blog</h1>
+    <h1>Insight Dev</h1>
     <nav>
       <a href="index.html">Home</a>
       <a href="about.html">About</a>
       <a href="contact.html">Contact</a>
+      <button id="dark-toggle" aria-label="Toggle dark mode">🌙</button>
+
     </nav>
+    
   </header>
 
-  <main>
-    <section class="post-preview">
-      <img src="beach.jpg" alt="Beach Shore" />
-      <h2><a href="post.html">How I Built This Blog</a></h2>
-      <p>This is a short preview of the blog post content...</p>
+  <main class="main-layout">
+    <!-- Hero Banner -->
+    <section class="hero">
+      <h2>Web Development Insights & Practices</h2>
+      <p>Actionable tutorials, thought pieces, and resources for developers building the modern web.</p>
     </section>
-    <section class="post-preview">
-      <h2><a href="post.html">Beach Blog Post</a></h2>
-      <p>The beach shore holds a special kind of serenity, where the rhythm of the waves and the salty breeze create a peaceful escape from the everyday hustle.
-         Whether you arere basking in the sun, watching the sunset, or just listening to the ocean’s song, the shore is a reminder of nature’s timeless beauty. 🌊🏖️</p>
+
+    <!-- Blog Posts -->
+    <section class="content">
+      <article class="post-preview">
+        <h3><a href="post.html">Building Accessible Web Interfaces</a></h3>
+        <p>Accessibility is not just a feature—it's a fundamental aspect of user experience that ensures everyone, regardless of ability, can interact with your product effectively.
+          By integrating accessibility from the start, you build more inclusive, user-friendly interfaces that serve a wider audience. 
+          Learn how to implement core WCAG (Web Content Accessibility Guidelines) principles—like perceivability, operability, understandability, and robustness—into your UI design. From color contrast and keyboard navigation to semantic HTML and ARIA roles, accessible design isn't just ethical—it’s smart design</p>
+        <span class="date">May 02, 2025</span>
+      </article>
+
+      <article class="post-preview">
+        <h3><a href="post.html">Mastering CSS Grid Layout</a></h3>
+        <p>Take full control of your page structure with CSS Grid—the ultimate layout system for modern web design. 
+           This comprehensive guide walks you through practical use-cases, starting with simple two-column layouts and progressing to advanced, responsive grid systems. Learn how to create clean, flexible designs with precise alignment, dynamic content areas, and seamless adaptability across screen sizes. 
+           Whether you're building a blog, dashboard, or landing page, mastering CSS Grid will empower you to design with confidence and clarity.</p>
+        <span class="date">May 02, 2025</span>
+      </article>
+
+      <article class="post-preview">
+        <h3><a href="post.html">How JavaScript Powers Progressive Web Apps</a></h3>
+        <p>Progressive Web Apps (PWAs) bring the speed and feel of native apps directly to the browser. 
+           By leveraging powerful features like service workers, intelligent caching, push notifications, and offline functionality, PWAs blur the line between web and mobile experiences. 
+           This guide explores how these technologies work together to create fast, reliable, and engaging applications—even in low-connectivity environments. From first load to full offline support, discover how PWAs are reshaping what's possible on the modern web.</p>
+        <span class="date">May 10, 2025</span>
+      </article>
     </section>
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <h3>Quick Reads</h3>
+      <ul>
+        <li><a href="post.html">JavaScript: Async/Await Explained</a></li>
+        <li><a href="post2.html">Effective Git Branching Strategies</a></li>
+        <li><a href="post3.html">Intro to TypeScript for Beginners</a></li>
+      </ul>
+
+      <h3>Tags</h3>
+      <div class="tags">
+        <span>#WebDev</span>
+        <span>#JavaScript</span>
+        <span>#CSS</span>
+        <span>#Accessibility</span>
+        <span>#PWA</span>
+      </div>
+    </aside>
   </main>
 
-  <footer>&copy; 2025 My Blog</footer>
+  <footer>
+    <p>&copy; 2025 Insight Dev. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
+
+

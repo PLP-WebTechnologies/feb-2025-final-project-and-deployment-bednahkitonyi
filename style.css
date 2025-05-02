@@ -57,14 +57,12 @@ body.dark-mode {
 }
 
 
-
 body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background-color: aqua;
+  background-color: bisque;
 }
-
 
 
 nav a {
@@ -175,4 +173,138 @@ body.dark-mode form button[type="submit"] {
 
 body.dark-mode form button[type="submit"]:hover {
   background-color: #ccc;
+}
+
+.main-layout {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.hero {
+  width: 100%;
+  padding: 2rem;
+  background-color: #f4f4f4;
+  border-radius: 12px;
+  text-align: center;
+}
+
+.content {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.post-preview {
+  padding: 1rem;
+  border-bottom: 1px solid #ddd;
+}
+
+.post-preview h3 {
+  margin: 0 0 0.5rem;
+  font-size: 1.4rem;
+}
+
+.post-preview p {
+  margin: 0 0 0.5rem;
+  color: #444;
+}
+
+.post-preview .date {
+  font-size: 0.85rem;
+  color: #777;
+}
+
+.sidebar {
+  flex: 1;
+  min-width: 250px;
+  padding: 1rem;
+  background-color: #f9f9f9;
+  border-radius: 12px;
+}
+
+.sidebar h3 {
+  margin-top: 0;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.sidebar li {
+  margin-bottom: 0.5rem;
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.tags span {
+  background-color: #eee;
+  padding: 0.3rem 0.6rem;
+  border-radius: 6px;
+  font-size: 0.85rem;
+}
+
+/* Dark mode adjustments */
+body.dark-mode .hero {
+  background-color: #222;
+  color: #eee;
+}
+
+body.dark-mode .sidebar {
+  background-color: #1e1e1e;
+}
+
+body.dark-mode .tags span {
+  background-color: #333;
+  color: #fff;
+}
+
+/* === DARK MODE STYLES === */
+body.dark-mode {
+  background-color: #121212;
+  color: #e0e0e0;
+}
+
+body.dark-mode header,
+body.dark-mode footer {
+  background-color: #1e1e1e;
+  color: #fff;
+}
+
+body.dark-mode nav a {
+  color: #ddd;
+}
+
+body.dark-mode .hero {
+  background-color: #1a1a1a;
+}
+
+body.dark-mode .post-preview,
+body.dark-mode .post-content,
+body.dark-mode .sidebar {
+  background-color: #1e1e1e;
+  border-color: #333;
+}
+
+body.dark-mode .tags span {
+  background-color: #333;
+  color: #eee;
+}
+
+body.dark-mode a {
+  color: #90caf9;
+}
+
+body.dark-mode blockquote {
+  border-left: 4px solid #444;
+  color: #bbb;
 }
